@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Tue Apr 29 13:36:34 COT 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-0145-aec6-2e7c-ffff88eda51f 
+on database directory C:\Users\jehincapie\Workspaces\eclipse-standard-kepler\educacion.software.patrones.ejercicios.accesodatos\data\accesodatosdb  with class loader sun.misc.Launcher$AppClassLoader@4a32ef2d 
+Loaded from file:/C:/Users/jehincapie/Workspaces/eclipse-standard-kepler/educacion.software.patrones.ejercicios.accesodatos/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_13-b20
+user.dir=C:\Users\jehincapie\Workspaces\eclipse-standard-kepler\educacion.software.patrones.ejercicios.accesodatos
+derby.system.home=C:\Users\jehincapie\Workspaces\eclipse-standard-kepler\educacion.software.patrones.ejercicios.accesodatos\.\data
+Database Class Loader started - derby.database.classpath=''
