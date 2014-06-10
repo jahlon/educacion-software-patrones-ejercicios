@@ -9,10 +9,15 @@ public class FiltroEspacioAGuionBajo extends FiltroLectura {
 	@Override
 	public int leer() throws LecturaException {
 		int b = lector.leer();
-		if(b == ' ') {
-			b = '_';
+		return filtrar(b);
+	}
+
+	@Override
+	public int filtrar(int c) {
+		if(c == ' ') {
+			c = '_';
 		}
-		return b;
+		return c;
 	}
 
 }

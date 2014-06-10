@@ -59,15 +59,17 @@ public class FrameLectorArchivo extends JFrame {
 	}
 
 	public void abrirArchivo(File selectedFile) {
-		lector = new LectorArchivo(selectedFile.getAbsolutePath());
+		lector = new FiltroEspacioAGuionBajo(
+					new FiltroMayusculaAMiniscula(
+						new LectorArchivo(selectedFile.getAbsolutePath())));
 		
-		if(panelOpciones.filtroEspacioAGuionActivado()) {
+		/*if(panelOpciones.filtroEspacioAGuionActivado()) {
 			lector = new FiltroEspacioAGuionBajo(lector);
 		}
 		
 		if(panelOpciones.filtroMayusculaAMinuscalaActivado()) {
 			lector = new FiltroMayusculaAMiniscula(lector);
-		}
+		}*/
 		
 		String contenido = leer();	
 		

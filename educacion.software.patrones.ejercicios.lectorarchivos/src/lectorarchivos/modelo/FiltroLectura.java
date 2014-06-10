@@ -12,4 +12,6 @@ public abstract class FiltroLectura implements Lector {
 	public void cerrar() throws LecturaException {
 		lector.cerrar();
 	}
+	
+	public abstract int filtrar(int c);
 }

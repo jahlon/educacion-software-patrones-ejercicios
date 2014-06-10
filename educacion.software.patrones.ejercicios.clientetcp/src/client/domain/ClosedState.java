@@ -21,7 +21,7 @@ public class ClosedState extends TcpConnectionState {
 				tcpConnection.setChannel(channel);
 				tcpConnection.setIn(new BufferedReader(new InputStreamReader(channel.getInputStream())));
 				tcpConnection.setOut(new PrintWriter(channel.getOutputStream(), true));
-				tcpConnection.setState(tcpConnection.getEstablishedState());
+				tcpConnection.setState(new EstablishedState(tcpConnection));
 			} catch (IOException e) {
 				throw new TcpConnectionException("Error estableciendo la conexión: " + e.getMessage());
 			}

@@ -9,10 +9,15 @@ public class FiltroMayusculaAMiniscula extends FiltroLectura {
 	@Override
 	public int leer() throws LecturaException {
 		int b = lector.leer();
-		if (Character.isUpperCase(b)) {
-			b = Character.toLowerCase(b);
+		return filtrar(b);
+	}
+
+	@Override
+	public int filtrar(int c) {
+		if (Character.isUpperCase(c)) {
+			c = Character.toLowerCase(c);
 		}
-		return b;
+		return c;
 	}
 
 }
